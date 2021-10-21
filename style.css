@@ -1,0 +1,431 @@
+body{
+    background-color: white;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Futura Std Book", "Century Gothic", "メイリオ", Meiryo, sans-serif;
+}
+
+.pes-header{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+}
+
+.konami-logo-png{
+    height: auto;
+    width: 130px;
+    cursor: pointer;
+ 
+}
+
+.select-language{
+    margin-right: 20px;
+
+}
+
+.select-language select{
+    width: 100%;
+    height: 28;;
+    border: 1px solid #a80495;
+    border-radius: 4px;
+    padding: 5px 57px 5px 4px;
+}
+
+.main-body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.attention{
+    background-color: rgba(172, 0, 29, 0.8);
+    margin-bottom: 10;
+    height: 48px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.attention:hover{
+    background-color: rgb(172 0 29);
+}
+
+.attention p{
+    font-size: 1.05rem;
+    line-height: 1;
+    font-weight: bold;
+
+}
+
+.home-image{
+    display: flex;
+    flex-direction: row; 
+    
+}
+
+.main-img{
+    width: 110%; 
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.banner-img{
+    width: 100%;
+    max-width: 850px;
+}
+
+.banner span{
+    letter-spacing: 0.1em;
+    padding: 7px 0;
+    font-size: 13px;
+}
+
+.maintanence{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 48px;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s linear;
+    margin-bottom: 10px;
+}
+
+.maintanence:hover{
+    background-color: black;  
+}
+
+.maintanence p{
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: bold;  
+}
+
+.main-content{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.info-head{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    padding: 12px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 2px 0 #555555;
+}
+
+.divices{
+    display: flex;
+    flex-direction: row;
+}
+
+.divice-type-ios, .divice-type-android{
+    cursor: pointer;
+    transition: 0.2s all;
+    text-align: center;
+    width: 140;
+    padding: 4px 0;
+    font-size: 1.125em;
+    font-family: "Futura Std Book", "Century Gothic", "メイリオ", Meiryo, sans-serif;
+}
+
+.divice-type-ios{
+    margin-right: 5px;
+    background: #00ac98;
+    color: white;
+    border: 1px solid;
+    border-color: rgba(0, 172, 152, 0.6);
+}
+
+.divice-type-android{
+    color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.divice-type-android:hover{
+    background: #00cfb7;
+    color: white;
+}
+
+.divice-type-ios:hover{
+    background: #0abda8d0;
+}
+
+.divices{
+    margin-bottom: 5px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    border-bottom: 1px solid #cccccc;
+}
+
+.content-head{
+    
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0 0 8px;
+    text-align: center;
+    color: #595959;
+}
+
+.topic-date{
+    font-size: 0.688em;
+    display: block;
+    margin: 3px 0;
+    color: #555555;
+}
+
+.info-catogary, .info-agent{
+    font-size: 80%;
+    font-weight: bold;
+    line-height: 20px;
+    display: block;
+    width: 10em;
+    height: 20px;
+    margin: 9px 0;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.info-catogary{
+    background: #6e3fb5;
+}
+
+.info-agent{
+    background: #535353;
+}
+
+.topic-title{
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #474747;
+}
+
+.topics-text{
+    font-size: 0.813em;
+    line-height: 1.4;
+    padding-top: 4px;
+    color: #333333;
+}
+
+.more{
+    margin-left: 50%;
+}
+
+.more a{
+    font-size: 0.85rem;
+    padding: 6px;
+    margin-top: 10px;
+    margin-left: 210px;
+    border-radius: 20px;
+    background-color: #00ac98;
+    color: #ffffff;
+    position: absolute;
+    width: 120px;
+    transition: 0.2s linear;
+    text-align: center;
+    text-decoration: none;
+}
+
+.more a:hover{
+    background-color: #09c9b2;
+}
+
+.info_link {
+    display: flex;
+    flex-direction: row;
+    width: 104%;
+    align-items: center;
+    margin-top: 45px;
+    margin-left: -35px;
+}
+
+.info_link ul {
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info_link li {
+    font-size: 1.125rem;
+    display: flex;
+    align-items: stretch;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 48%;
+    text-align: center;
+    border-bottom: none;
+}
+
+.info_link li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_link li a {
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    transition: 0.2s;
+    border-radius: 20px;
+    color: #ffffff;
+    padding-right: 20px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.info_link li a:hover{
+    background-color: black;
+}
+
+.download{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 20px 2%;
+    padding: 0% 2%;
+    border-radius: 3px;
+    background: #dcdcdc;
+    padding-top: 2%;
+}
+
+.link_text{
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: center;
+    color: #333333;
+    font-size: 16px;
+    text-shadow: 0 0 10px #ffffff;
+}
+
+.link_btn{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.link_btn ul {
+    display: flex;
+}
+
+.link_btn li {
+    width: 50%;
+    max-height: 44px;
+    padding: 0 5px;
+    border-bottom: none;
+}
+
+.link_btn img {
+    width: 100%;
+    max-height: 50px;
+    margin-top: 0px;
+}
+
+.forandroid{
+    margin-top:-49px;
+}
+.ios-download{
+    margin-left:-190px;
+}
+
+.android-download{
+    float:right;
+    margin-right:-90px;
+}
+
+.page_link {
+    display: flex;
+    flex-direction: row;
+}
+
+.page_link ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.page_link li {
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 48%;
+    text-align: center;
+    border-bottom: none;
+}
+
+.page_link li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page_link li a {
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    transition: 0.2s;
+    border-radius: 20px;
+
+    color: #ffffff;
+    padding-right: 20px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.page_link li a:hover{
+    background-color: black;
+}
